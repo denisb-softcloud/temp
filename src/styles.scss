@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+button, input {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  padding: 0;
+  margin: 0;
+
+
+  &.inline {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      margin: 0 5px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  &.primary {
+    color: #1478bd;
+    &:hover {
+      color: #1463a9;
+    }
+  }
+  &.secondary {}
+  &.warning {}
+  &.success {}
+  &.danger {}
+}
+
+button {
+  cursor: pointer;
+  padding: 15px 20px;
+  background: none;
+  outline: none;
+  border: 1px solid rgba(0,0,0, 0.05);
+  &:hover {
+    background-color: rgba(0,0,0, 0.01);
+  }
+  &.primary {
+    border: 1px solid rgba(20,120,189, 0.2);
+    color: #1478bd;
+    &:hover {
+      border: 1px solid rgba(20,120,189, 0.1);
+    }
+  }
+  &.secondary {}
+  &.warning {}
+  &.success {}
+  &.danger {}
+}
+
+.inner {
+  padding: 15px 25px;
+}
